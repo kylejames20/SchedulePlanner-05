@@ -23,6 +23,20 @@ function currentTimeOfDay() {
     setBGClass();
   }
 }
+compareHour()
+function compareHour(){
+    let currentHour
+    $(".scheduledevents").each(function(){
+      let calendarHour = parseInt($(this).children().attr("id"))
+      console.log($(this).children().attr("id"))
+    })
+  //need to get current hour and compare with each hour on calendar
+  //if the current hour is > the hour on calendar, then give it a class that will change BG color to grey
+  //if the current hour is = the hour on calendar, then give it a class that will change BG color to red
+  //if the current hour is < the hour on calendar, then give it a class that will change BG color to green
+
+
+}
 //saves events that user puts into the time box
 function priorityList() {
   for(let i=0; i< hoursOfDay.length; i++){
